@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FJRECFILMS</title>
+    <link rel="icon" type="image/x-icon" href="./images/rifke.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <section class="section--top">
+      <img
+        class="img--logo img--dxr-zone"
+        src="images/dxr-zone.png"
+        alt="DXR Zone"
+      />
+      <video
+        class="video--intro"
+        src="./Videos/Reel Drone.mp4"
+        loop
+        autoplay
+        muted
+        playsinline
+      ></video>
+      <img
+        class="img--logo img--digital-engine"
+        src="images/digital-engine.png"
+        alt="Digital Engine"
+      />
+    <section class="section--video">
+      <div class="container">
+        <div class="video-container">
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4"></video>
+          </div>
+          <div class="video">
+            <video src="Videos/1.mp4" muted></video>
+          </div>
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4" muted></video>
+          </div>
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4" muted></video>
+          </div>
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4" muted></video>
+          </div>
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4" muted></video>
+          </div>
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4" muted></video>
+          </div>
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4" muted></video>
+          </div>
+          <div class="video">
+            <video src="Videos/Reel Drone.mp4" muted></video>
+          </div>
+        </div>
+      </div>  
+    </section>
+  <section class="section--about">
+        <h3>About me</h3>
+        <p class="about--text">
+          FJ REC FILM is a video creator and development founded by Javier Ramirez
+          Carro <br />
+          <p1
+            >I consider myself a very creative, perfectionist and proactive
+            person, who has great organization skills, high attention to detail
+            and very inquisitive about life. I believe I have got the talent of
+            finding dynamic solutions to the problems I encounter, and I would say
+            that is one of the reasons that has allowed me to work for big
+            companies such as “CDS”, “Moss Producer”, “Hakawaticafe”, “Ibérica
+            Tasty” or “Mazonco”. In my opinion I have a very positive way of
+            thinking, which is the essence of my working way. Additionally, I
+            consider myself a very social person and so, I like the cooperative
+            work within a team. In my spare time, I like watching films, listening
+            to music, playing the saxophone and being with my family and
+            friends.</p1
+          >
+        </p>
+    </section>
+    <section class="section--contact">
+      <div class="border"></div>
+      <h3>Contact</h3>
+      <div class="redes__container">
+        <ul class="redes_icons">
+          <li>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/fjaudiovisual/?hl=es"
+              target="_blank"
+              class="instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://vimeo.com/user51869069"
+              target="_blank"
+              class="vimeo"
+              ><i class="fab fa-vimeo"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/user/JaviRamirezCarro"
+              target="_blank"
+              class="youtube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="mailto:fjrecfilms@gmail.com"
+              target="_blank"
+              class="envelope"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="Tel:+34 630 079 429" class="phone"
+              ><i class="fas fa-phone"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script>
+      var videos = document.querySelectorAll("video");
+          videos.forEach((video) =>
+            video.addEventListener("click", () => {
+              video.classList.toggle("active");
+              if (video.paused) {
+                video.play();
+              } else {
+                video.pause();
+                video.currentTime = 0;
+              }
+            })
+          );
+    </script>
+  </body>
+</html>
